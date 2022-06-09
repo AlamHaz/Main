@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "test-adf-ps"
+		},
+		"AmazonS31_secretAccessKey": {
+			"value": ""
+		},
+		"AmazonS32_secretAccessKey": {
+			"value": ""
+		},
+		"AmazonS33source_secretAccessKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"StroageLinkservicebk_accountKey": {
+			"value": ""
+		},
+		"linkserviceforblobbook_connectionString": {
+			"value": ""
+		},
+		"AmazonS31_properties_typeProperties_accessKeyId": {
+			"value": "AKIAXS3EXODM25JLJOHB"
+		},
+		"AmazonS32_properties_typeProperties_accessKeyId": {
+			"value": "AKIAXS3EXODM25JLJOHB"
+		},
+		"AmazonS33source_properties_typeProperties_accessKeyId": {
+			"value": "AKIAXS3EXODMSYARBQEJ"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://stroageadfdemo4.dfs.core.windows.net"
+		},
+		"StroageLinkservicebk_properties_typeProperties_url": {
+			"value": "https://stroageadfdemo4.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
