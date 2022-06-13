@@ -1,0 +1,17 @@
+{
+	"name": "AzureBlobkeyvalttestadf",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVaultconnectionforADF",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "connectionstringwithkwy1"
+			}
+		}
+	}
+}
