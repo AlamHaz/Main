@@ -1,0 +1,21 @@
+{
+	"name": "copydatafromonecointertoanother",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "StroageLinkservicebk",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "azure-data-factory-by-example-main.zip",
+				"fileSystem": "landing"
+			},
+			"compression": {
+				"type": "ZipDeflate"
+			}
+		}
+	}
+}
