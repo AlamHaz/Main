@@ -1,0 +1,75 @@
+{
+	"name": "ABS_JSON_parameterDSTest",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStoragetestadf",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Container": {
+				"type": "string"
+			},
+			"Directory": {
+				"type": "string",
+				"defaultValue": "."
+			},
+			"File": {
+				"type": "string",
+				"defaultValue": "."
+			}
+		},
+		"folder": {
+			"name": "Chapter 5"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().File",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().Directory",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().Container",
+					"type": "Expression"
+				}
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Month": {
+					"type": "string"
+				},
+				"Company": {
+					"type": "string"
+				},
+				"Sales": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"Product": {
+								"type": "string"
+							},
+							"ManufacturerProductCode": {
+								"type": "string"
+							},
+							"Units": {
+								"type": "integer"
+							},
+							"Value": {
+								"type": "number"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
