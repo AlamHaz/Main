@@ -1,0 +1,37 @@
+{
+	"name": "DestETl",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageforETL",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ETL"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "output"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	}
+}
